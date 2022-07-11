@@ -12,5 +12,6 @@
   },
   "keywords": ["css-in-js","js-styling","css"],
   "author": "Abdul Rafay",
-  "license": "ISC"
+  "license": "ISC",
+  "homepage": "https://github.com/rafayrty/simple-css-in-js.git"
 }
