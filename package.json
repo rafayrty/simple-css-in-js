@@ -16,7 +16,7 @@
     "css"
   ],
   "author": "Abdul Rafay",
-  "license": "ISC",
+  "license": "MIT",
   "homepage": "https://github.com/rafayrty/simple-css-in-js.git",
   "devDependencies": {
     "typescript": "^4.7.4"
