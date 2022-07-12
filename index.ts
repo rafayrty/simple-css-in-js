@@ -3,7 +3,7 @@ declare global {
             styles(styles: CSSStyleRule): void;
      }
   }
-export function SimpleCSS(globals:void | CSSStyleRule) {
+export default function SimpleCSS(globals:void | CSSStyleRule) {
     if (globals) {
         var el: NodeListOf<HTMLElement> = document.querySelectorAll('*') ;
         for (var i = 0; i < el.length; i++) {
