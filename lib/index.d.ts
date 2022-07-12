@@ -3,4 +3,4 @@ declare global {
         styles<T extends Partial<CSSStyleDeclaration>>(styles: T): void;
     }
 }
-export default function SimpleCSS<T extends Partial<CSSStyleDeclaration>>(globals: void | T): boolean;
+export default function SimpleCSS<T extends Partial<CSSStyleDeclaration>>(globals: T | void): boolean;
