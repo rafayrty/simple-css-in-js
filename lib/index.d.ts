@@ -1,6 +1,6 @@
 declare global {
     interface HTMLElement {
-        styles(styles: CSSStyleRule): void;
+        styles(styles: CSSStyleDeclaration): void;
     }
 }
-export declare function SimpleCSS(globals: void | CSSStyleRule): boolean;
+export default function SimpleCSS(globals: void | CSSStyleDeclaration): boolean;

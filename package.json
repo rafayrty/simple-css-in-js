@@ -1,9 +1,11 @@
 {
   "name": "simple-css-in-js",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types":"lib/index.d.ts",
   "scripts": {
+    "build":"tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -13,7 +15,8 @@
   "keywords": [
     "css-in-js",
     "js-styling",
-    "css"
+    "css",
+    "typescript"
   ],
   "author": "Abdul Rafay",
   "license": "MIT",

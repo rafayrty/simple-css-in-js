@@ -4,12 +4,14 @@
     "target": "es5",                /* Specify ECMAScript target version: */
     "module": "commonjs",           /* 'none', 'commonjs', 'amd', 'system', etc */
     "declaration": true,            /* Concatenate & emit output to single file.*/
-    "outDir": "lib",                /* Redirect output to the directory. */
+    "outDir": "lib",     
+    "lib": ["es2017", "es7", "es6", "dom"],
     "esModuleInterop": true,        /* Enables intero between CommonJS and ES */
     "skipLibCheck": true,           /* Skip type checking of declaration files. */
     "forceConsistentCasingInFileNames": true /* Disallow inconsistently */
   },
-  "include": [
-    "index.ts"
+  "exclude": [
+    "node_modules",
+    "lib"
   ]
 }
