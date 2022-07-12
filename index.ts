@@ -1,18 +1,17 @@
 declare global {
     interface HTMLElement {
-            styles(styles: CSSStyleDeclaration): void;
+        styles<T extends Partial<CSSStyleDeclaration>>(styles: T): void;
      }
   }
-export default function SimpleCSS(globals:void | CSSStyleDeclaration) {
-    if (globals) {
-        var el: NodeListOf<HTMLElement> = document.querySelectorAll('*') ;
+export default function SimpleCSS<T extends Partial<CSSStyleDeclaration>>(globals: T | void){
+        var el: NodeListOf<HTMLElement> = document.querySelectorAll('*');
         for (var i = 0; i < el.length; i++) {
-            for (let glob in globals) {
+            for (let glob in globals as T) {
                 el[i].style[glob] = globals[glob];
-       }
         }
     }
-    HTMLElement.prototype.styles = function (styles:CSSStyleDeclaration) {
+    
+    HTMLElement.prototype.styles = function <T extends Partial<CSSStyleDeclaration>>(styles:T) {
         for (let style in styles) {
             this.style[style] = styles[style];
         }
